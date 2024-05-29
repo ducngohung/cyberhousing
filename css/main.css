@@ -1,0 +1,26 @@
+/* GLOBAL */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00cdce;
+}
+
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    background-color: white;
+    letter-spacing: 1px;
+}
+
+input, textarea, select, button {
+	font-size: inherit;
+	font-family: inherit;
+}
