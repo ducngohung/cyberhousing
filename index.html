@@ -14,11 +14,180 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- OWLCarousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="#">Cyber<span>Housing</span></a>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Agents</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SLIDER / CAROUSEL -->
+    <section class="slider">
+        <div class="slider__content">
+            <div class="owl-carousel owl-theme">
+                <!-- Slider item 1 -->
+                <div class="slider__item">
+                    <img src="./img/b1.jpg" alt="slider 1" class="slider__image">
+                    <div class="slider__desc">
+                        <h1>LOREM IPSUM AMET</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+
+                <!-- Slider item 2 -->
+                <div class="slider__item">
+                    <img src="./img/b2.jpg" alt="slider 2" class="slider__image">
+                    <div class="slider__desc">
+                        <h1>LOREM IPSUM AMET</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <!-- Slider item 3 -->
+                <div class="slider__item">
+                    <img src="./img/b3.jpg" alt="slider 3" class="slider__image">
+                    <div class="slider__desc">
+                        <h1>LOREM IPSUM AMET</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <!-- Slider item 4 -->
+                <div class="slider__item">
+                    <img src="./img/b41.jpg" alt="slider 4" class="slider__image">
+                    <div class="slider__desc">
+                        <h1>LOREM IPSUM AMET</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About</h2>
+        <div class="about__content">
+            <div class="about__item">
+                <i class="fa fa-home"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae praesentium quae molestias
+                    minus, aperiam voluptatem.</p>
+            </div>
+            <div class="about__item">
+                <i class="fa fa-key"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro minima dolorem pariatur modi,
+                    delectus nihil.</p>
+            </div>
+            <div class="about__item">
+                <i class="fa fa-money-bill-alt"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda ratione molestias fuga
+                    soluta quasi veniam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS / COUNTUP -->
+    <section class="stats">
+        <h2>Stats</h2>
+        <div class="stats__content">
+            <div class="stats__item">
+                <p class="stats__counter">3500</p>
+                <p>clients</p>
+            </div>
+            <div class="stats__item">
+                <p class="stats__counter">650</p>
+                <p>Plans</p>
+            </div>
+            <div class="stats__item">
+                <p class="stats__counter">1021</p>
+                <p>projects</p>
+            </div>
+            <div class="stats__item">
+                <p class="stats__counter">1010</p>
+                <p>Likes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+
+    <!-- VIDEO / MORE -->
+
+    <!-- GALLERY -->
+
+    <!-- SUBSCRIBE FORM -->
+
+    <!-- TEAM -->
+
+    <!-- CONTACT -->
+
+    <!-- FOOTER -->
+
+    <!-- SCRIPT HERE -->
+
+    <!-- JQUERY Script -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- WayPoint Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- OWLCarousel 2 -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 1500,
+            animateOut: 'fadeOut',
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <!-- CountUP JS -->
+    <script src="./js/jquery.countup.js"></script>
+    <!-- CountUp function -->
+    <script>
+        $('.stats__counter').countUp();
+    </script>
 
 </body>
 
