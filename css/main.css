@@ -301,7 +301,7 @@ header {
 
 .blog__item img {
     width: 100%;
-    /* height: 70%; */
+    height: 70%;
 }
 
 .blog__info {
