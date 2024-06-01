@@ -36,24 +36,24 @@
                 <a href="#">Cyber<span>Housing</span></a>
             </div>
             <nav class="header__nav">
-                <ul>
+                <ul id="mainNav">
                     <li class="active">
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="#blog">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#gallery">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Agents</a>
+                        <a href="#agents">Agents</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -395,7 +395,24 @@
     </section>
 
     <!-- FOOTER -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__copyright">
+                <p>© CyberHousing. All Rights Reserved | Design by <span>CyberHousing</span></p>
+            </div>
+            <div class="footer__social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa fa-rss"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+    </footer>
 
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out">
+        <img src="./img/arrowup.png" alt="backToTop">
+    </a>
 
     <!-- SCRIPT HERE -->
     <!-- SCRIPT FOR BLOG POPUP CONTENT -->
@@ -502,6 +519,30 @@
             }
         });
     </script>
+
+    <!-- BACK TO TOP -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backToTop.js"></script>
+
+    <!-- Navigation bar JS -->
+    <script>
+        //thẻ ul
+        var mainNav = document.getElementById("mainNav");
+        //Các thẻ li
+        var listNav = mainNav.getElementsByTagName("li");
+        for (var i = 0; i < listNav.length; i++) {
+            listNav[i].addEventListener("click", function () {
+                //tìm thẻ đang được gán class active
+                var current = document.querySelector("#mainNav .active");
+                //xóa class active của thẻ đang được gán
+                current.className = current.className.replace("active", "");
+                //thêm class active vào cho thẻ li được click
+                this.className += "active";
+
+            });
+        }
+    </script>
+
 </body>
 
 </html>
